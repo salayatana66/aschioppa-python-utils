@@ -52,6 +52,9 @@ class functionalDict():
             dict([(k[0],k[1]) for k in self.Dict.items() if Fun(k[1])])
             )
 
+    def update(self, fDict2):
+        self.Dict.update(fDict2.Dict)
+
     def __str__(self):
         return str(self.Dict)
 
