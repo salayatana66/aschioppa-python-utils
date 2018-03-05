@@ -65,10 +65,10 @@ if __name__ == "__main__":
     try:
         fD["d"]
     except KeyError:
-        print "Ooops"
-    print fD
-    print fD.filterValues(lambda x : x % 2 == 0)
-    print (fD.filterValues(lambda x : x % 2 == 0)
+        print("Ooops")
+    print(fD)
+    print(fD.filterValues(lambda x : x % 2 == 0))
+    print( (fD.filterValues(lambda x : x % 2 == 0)
            .mapKeys(lambda x : x + "5")
            .mapValues(lambda x : x + 20)
-           )
+           ))
